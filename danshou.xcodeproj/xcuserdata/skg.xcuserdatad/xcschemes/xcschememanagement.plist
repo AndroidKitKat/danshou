@@ -4,15 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>dansho (iOS).xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
 		<key>dansho (macOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>danshou (iOS).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>danshou (macOS).xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>4B3E0F2626796A790010F573</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

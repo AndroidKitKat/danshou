@@ -1,6 +1,6 @@
 //
 //  NetworksOverviewView.swift
-//  dansho (iOS)
+//  danshou (iOS)
 //
 //  Created by skg on 6/15/21.
 //
@@ -36,8 +36,8 @@ struct NetworksOverviewView: View {
                 ForEach(networks) { network in
                         NetworkView(network: network)
                 }
+                .navigationBarTitle(Text("Networks"))
             }
-            .navigationTitle(Text("Networks"))
             .navigationBarItems(leading: Button {} label: {
                 Image(systemName: "gearshape.fill").foregroundColor(Color.accentColor)
             })

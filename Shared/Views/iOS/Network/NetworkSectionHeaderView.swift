@@ -1,6 +1,6 @@
 //
 //  NetworkSectionHeaderView.swift
-//  dansho (iOS)
+//  danshou (iOS)
 //
 //  Created by skg on 6/15/21.
 //

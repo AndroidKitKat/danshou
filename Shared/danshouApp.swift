@@ -1,5 +1,5 @@
 //
-//  danshoApp.swift
+//  danshouApp.swift
 //  Shared
 //
 //  Created by skg on 6/15/21.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct danshoApp: App {
+struct danshouApp: App {
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {

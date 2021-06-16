@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B3E0F2E26796A790010F573 /* dansho.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F1D26796A780010F573 /* dansho.xcdatamodeld */; };
-		4B3E0F2F26796A790010F573 /* dansho.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F1D26796A780010F573 /* dansho.xcdatamodeld */; };
-		4B3E0F3026796A790010F573 /* danshoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F1F26796A780010F573 /* danshoApp.swift */; };
-		4B3E0F3126796A790010F573 /* danshoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F1F26796A780010F573 /* danshoApp.swift */; };
+		4B3E0F2E26796A790010F573 /* danshou.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F1D26796A780010F573 /* danshou.xcdatamodeld */; };
+		4B3E0F2F26796A790010F573 /* danshou.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F1D26796A780010F573 /* danshou.xcdatamodeld */; };
+		4B3E0F3026796A790010F573 /* danshouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F1F26796A780010F573 /* danshouApp.swift */; };
+		4B3E0F3126796A790010F573 /* danshouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F1F26796A780010F573 /* danshouApp.swift */; };
 		4B3E0F3226796A790010F573 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F2026796A780010F573 /* ContentView.swift */; };
 		4B3E0F3326796A790010F573 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F2026796A780010F573 /* ContentView.swift */; };
 		4B3E0F3426796A790010F573 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F2126796A780010F573 /* Persistence.swift */; };
@@ -27,17 +27,18 @@
 
 /* Begin PBXFileReference section */
 		4B3E0F1E26796A780010F573 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
-		4B3E0F1F26796A780010F573 /* danshoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = danshoApp.swift; sourceTree = "<group>"; };
+		4B3E0F1F26796A780010F573 /* danshouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = danshouApp.swift; sourceTree = "<group>"; };
 		4B3E0F2026796A780010F573 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B3E0F2126796A780010F573 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		4B3E0F2226796A790010F573 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4B3E0F2726796A790010F573 /* dansho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dansho.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B3E0F2D26796A790010F573 /* dansho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dansho.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B3E0F4126796BC20010F573 /* dansho--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "dansho--macOS--Info.plist"; sourceTree = "<group>"; };
+		4B3E0F2726796A790010F573 /* danshou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = danshou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3E0F2D26796A790010F573 /* danshou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = danshou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3E0F4126796BC20010F573 /* danshou--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "danshou--macOS--Info.plist"; sourceTree = "<group>"; };
 		4B3E0F4426796D070010F573 /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
 		4B3E0F4626796DA60010F573 /* NetworkEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEntryView.swift; sourceTree = "<group>"; };
 		4B5931792679902A00F83507 /* NetworksOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworksOverviewView.swift; sourceTree = "<group>"; };
 		4B59317B2679953300F83507 /* NetworkSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSectionHeaderView.swift; sourceTree = "<group>"; };
+		4B59317D2679A8F300F83507 /* danshou--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "danshou--iOS--Info.plist"; sourceTree = "<group>"; };
 		4BCE380C267976F600A0A64C /* NetworkEntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEntryModel.swift; sourceTree = "<group>"; };
 		4BCE380F26798B5400A0A64C /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,7 +64,8 @@
 		4B3E0F1726796A780010F573 = {
 			isa = PBXGroup;
 			children = (
-				4B3E0F4126796BC20010F573 /* dansho--macOS--Info.plist */,
+				4B59317D2679A8F300F83507 /* danshou--iOS--Info.plist */,
+				4B3E0F4126796BC20010F573 /* danshou--macOS--Info.plist */,
 				4B3E0F1C26796A780010F573 /* Shared */,
 				4B3E0F2826796A790010F573 /* Products */,
 			);
@@ -72,14 +74,14 @@
 		4B3E0F1C26796A780010F573 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4B3E0F4026796B3E0010F573 /* Views */,
 				4BCE380E2679897900A0A64C /* Resources */,
 				4BCE380B267976DD00A0A64C /* Models */,
-				4B3E0F1F26796A780010F573 /* danshoApp.swift */,
+				4B3E0F1F26796A780010F573 /* danshouApp.swift */,
 				4B3E0F2026796A780010F573 /* ContentView.swift */,
-				4B3E0F4026796B3E0010F573 /* Views */,
 				4B3E0F2126796A780010F573 /* Persistence.swift */,
 				4B3E0F2226796A790010F573 /* Assets.xcassets */,
-				4B3E0F1D26796A780010F573 /* dansho.xcdatamodeld */,
+				4B3E0F1D26796A780010F573 /* danshou.xcdatamodeld */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -87,8 +89,8 @@
 		4B3E0F2826796A790010F573 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4B3E0F2726796A790010F573 /* dansho.app */,
-				4B3E0F2D26796A790010F573 /* dansho.app */,
+				4B3E0F2726796A790010F573 /* danshou.app */,
+				4B3E0F2D26796A790010F573 /* danshou.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,9 +141,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4B3E0F2626796A790010F573 /* dansho (iOS) */ = {
+		4B3E0F2626796A790010F573 /* danshou (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B3E0F3A26796A790010F573 /* Build configuration list for PBXNativeTarget "dansho (iOS)" */;
+			buildConfigurationList = 4B3E0F3A26796A790010F573 /* Build configuration list for PBXNativeTarget "danshou (iOS)" */;
 			buildPhases = (
 				4B3E0F2326796A790010F573 /* Sources */,
 				4B3E0F2426796A790010F573 /* Frameworks */,
@@ -151,14 +153,14 @@
 			);
 			dependencies = (
 			);
-			name = "dansho (iOS)";
+			name = "danshou (iOS)";
 			productName = "dansho (iOS)";
-			productReference = 4B3E0F2726796A790010F573 /* dansho.app */;
+			productReference = 4B3E0F2726796A790010F573 /* danshou.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4B3E0F2C26796A790010F573 /* dansho (macOS) */ = {
+		4B3E0F2C26796A790010F573 /* danshou (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B3E0F3D26796A790010F573 /* Build configuration list for PBXNativeTarget "dansho (macOS)" */;
+			buildConfigurationList = 4B3E0F3D26796A790010F573 /* Build configuration list for PBXNativeTarget "danshou (macOS)" */;
 			buildPhases = (
 				4B3E0F2926796A790010F573 /* Sources */,
 				4B3E0F2A26796A790010F573 /* Frameworks */,
@@ -168,9 +170,9 @@
 			);
 			dependencies = (
 			);
-			name = "dansho (macOS)";
+			name = "danshou (macOS)";
 			productName = "dansho (macOS)";
-			productReference = 4B3E0F2D26796A790010F573 /* dansho.app */;
+			productReference = 4B3E0F2D26796A790010F573 /* danshou.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -191,21 +193,22 @@
 					};
 				};
 			};
-			buildConfigurationList = 4B3E0F1B26796A780010F573 /* Build configuration list for PBXProject "dansho" */;
+			buildConfigurationList = 4B3E0F1B26796A780010F573 /* Build configuration list for PBXProject "danshou" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 4B3E0F1726796A780010F573;
 			productRefGroup = 4B3E0F2826796A790010F573 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4B3E0F2626796A790010F573 /* dansho (iOS) */,
-				4B3E0F2C26796A790010F573 /* dansho (macOS) */,
+				4B3E0F2626796A790010F573 /* danshou (iOS) */,
+				4B3E0F2C26796A790010F573 /* danshou (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -236,9 +239,9 @@
 			files = (
 				4B59317C2679953300F83507 /* NetworkSectionHeaderView.swift in Sources */,
 				4BCE381026798B5400A0A64C /* NetworkModel.swift in Sources */,
-				4B3E0F3026796A790010F573 /* danshoApp.swift in Sources */,
+				4B3E0F3026796A790010F573 /* danshouApp.swift in Sources */,
 				4B3E0F3426796A790010F573 /* Persistence.swift in Sources */,
-				4B3E0F2E26796A790010F573 /* dansho.xcdatamodeld in Sources */,
+				4B3E0F2E26796A790010F573 /* danshou.xcdatamodeld in Sources */,
 				4B3E0F4526796D070010F573 /* NetworkView.swift in Sources */,
 				4B59317A2679902A00F83507 /* NetworksOverviewView.swift in Sources */,
 				4BCE380D267976F600A0A64C /* NetworkEntryModel.swift in Sources */,
@@ -251,9 +254,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B3E0F3126796A790010F573 /* danshoApp.swift in Sources */,
+				4B3E0F3126796A790010F573 /* danshouApp.swift in Sources */,
 				4B3E0F3526796A790010F573 /* Persistence.swift in Sources */,
-				4B3E0F2F26796A790010F573 /* dansho.xcdatamodeld in Sources */,
+				4B3E0F2F26796A790010F573 /* danshou.xcdatamodeld in Sources */,
 				4B3E0F3326796A790010F573 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +385,11 @@
 				DEVELOPMENT_TEAM = UYPY43BUFP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "danshou--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Danshou;
+				INFOPLIST_KEY_CFBundleExecutable = danshou;
+				INFOPLIST_KEY_CFBundleName = danshou;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -393,8 +401,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = moe.waifupaste.dansho;
-				PRODUCT_NAME = dansho;
+				PRODUCT_BUNDLE_IDENTIFIER = moe.waifupaste.danshou;
+				PRODUCT_NAME = danshou;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -412,6 +420,11 @@
 				DEVELOPMENT_TEAM = UYPY43BUFP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "danshou--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Danshou;
+				INFOPLIST_KEY_CFBundleExecutable = danshou;
+				INFOPLIST_KEY_CFBundleName = danshou;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -423,8 +436,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = moe.waifupaste.dansho;
-				PRODUCT_NAME = dansho;
+				PRODUCT_BUNDLE_IDENTIFIER = moe.waifupaste.danshou;
+				PRODUCT_NAME = danshou;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -447,8 +460,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "dansho--macOS--Info.plist";
-				INFOPLIST_KEY_CFBundleExecutable = dansho;
+				INFOPLIST_FILE = "danshou--macOS--Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = danshou;
 				INFOPLIST_KEY_CFBundleName = dansho;
 				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -458,8 +471,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = moe.waifupaste.dansho;
-				PRODUCT_NAME = dansho;
+				PRODUCT_BUNDLE_IDENTIFIER = moe.waifupaste.danshou;
+				PRODUCT_NAME = danshou;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -480,8 +493,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "dansho--macOS--Info.plist";
-				INFOPLIST_KEY_CFBundleExecutable = dansho;
+				INFOPLIST_FILE = "danshou--macOS--Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = danshou;
 				INFOPLIST_KEY_CFBundleName = dansho;
 				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -491,8 +504,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = moe.waifupaste.dansho;
-				PRODUCT_NAME = dansho;
+				PRODUCT_BUNDLE_IDENTIFIER = moe.waifupaste.danshou;
+				PRODUCT_NAME = danshou;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -502,7 +515,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4B3E0F1B26796A780010F573 /* Build configuration list for PBXProject "dansho" */ = {
+		4B3E0F1B26796A780010F573 /* Build configuration list for PBXProject "danshou" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B3E0F3826796A790010F573 /* Debug */,
@@ -511,7 +524,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B3E0F3A26796A790010F573 /* Build configuration list for PBXNativeTarget "dansho (iOS)" */ = {
+		4B3E0F3A26796A790010F573 /* Build configuration list for PBXNativeTarget "danshou (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B3E0F3B26796A790010F573 /* Debug */,
@@ -520,7 +533,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B3E0F3D26796A790010F573 /* Build configuration list for PBXNativeTarget "dansho (macOS)" */ = {
+		4B3E0F3D26796A790010F573 /* Build configuration list for PBXNativeTarget "danshou (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B3E0F3E26796A790010F573 /* Debug */,
@@ -532,13 +545,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		4B3E0F1D26796A780010F573 /* dansho.xcdatamodeld */ = {
+		4B3E0F1D26796A780010F573 /* danshou.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				4B3E0F1E26796A780010F573 /* Shared.xcdatamodel */,
 			);
 			currentVersion = 4B3E0F1E26796A780010F573 /* Shared.xcdatamodel */;
-			path = dansho.xcdatamodeld;
+			path = danshou.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
