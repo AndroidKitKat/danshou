@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B3E0F2E26796A790010F573 /* danshou.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F1D26796A780010F573 /* danshou.xcdatamodeld */; };
-		4B3E0F2F26796A790010F573 /* danshou.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F1D26796A780010F573 /* danshou.xcdatamodeld */; };
 		4B3E0F3026796A790010F573 /* danshouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F1F26796A780010F573 /* danshouApp.swift */; };
 		4B3E0F3126796A790010F573 /* danshouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F1F26796A780010F573 /* danshouApp.swift */; };
 		4B3E0F3226796A790010F573 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F2026796A780010F573 /* ContentView.swift */; };
@@ -19,14 +17,15 @@
 		4B3E0F3726796A790010F573 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3E0F2226796A790010F573 /* Assets.xcassets */; };
 		4B3E0F4526796D070010F573 /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F4426796D070010F573 /* NetworkView.swift */; };
 		4B3E0F4726796DA60010F573 /* NetworkEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E0F4626796DA60010F573 /* NetworkEntryView.swift */; };
+		4B48D4D2267A33DA00CE3DF1 /* AddNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B48D4D1267A33DA00CE3DF1 /* AddNetworkView.swift */; };
+		4B48D4D5267A424B00CE3DF1 /* ChannelMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B48D4D4267A424B00CE3DF1 /* ChannelMessageView.swift */; };
 		4B59317A2679902A00F83507 /* NetworksOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5931792679902A00F83507 /* NetworksOverviewView.swift */; };
 		4B59317C2679953300F83507 /* NetworkSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B59317B2679953300F83507 /* NetworkSectionHeaderView.swift */; };
-		4BCE380D267976F600A0A64C /* NetworkEntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE380C267976F600A0A64C /* NetworkEntryModel.swift */; };
 		4BCE381026798B5400A0A64C /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE380F26798B5400A0A64C /* NetworkModel.swift */; };
+		4BF8698C267A8E310081D44B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF8698B267A8E310081D44B /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4B3E0F1E26796A780010F573 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		4B3E0F1F26796A780010F573 /* danshouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = danshouApp.swift; sourceTree = "<group>"; };
 		4B3E0F2026796A780010F573 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B3E0F2126796A780010F573 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -36,11 +35,13 @@
 		4B3E0F4126796BC20010F573 /* danshou--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "danshou--macOS--Info.plist"; sourceTree = "<group>"; };
 		4B3E0F4426796D070010F573 /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
 		4B3E0F4626796DA60010F573 /* NetworkEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEntryView.swift; sourceTree = "<group>"; };
+		4B48D4D1267A33DA00CE3DF1 /* AddNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNetworkView.swift; sourceTree = "<group>"; };
+		4B48D4D4267A424B00CE3DF1 /* ChannelMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMessageView.swift; sourceTree = "<group>"; };
 		4B5931792679902A00F83507 /* NetworksOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworksOverviewView.swift; sourceTree = "<group>"; };
 		4B59317B2679953300F83507 /* NetworkSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSectionHeaderView.swift; sourceTree = "<group>"; };
 		4B59317D2679A8F300F83507 /* danshou--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "danshou--iOS--Info.plist"; sourceTree = "<group>"; };
-		4BCE380C267976F600A0A64C /* NetworkEntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEntryModel.swift; sourceTree = "<group>"; };
 		4BCE380F26798B5400A0A64C /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		4BF8698B267A8E310081D44B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +82,6 @@
 				4B3E0F2026796A780010F573 /* ContentView.swift */,
 				4B3E0F2126796A780010F573 /* Persistence.swift */,
 				4B3E0F2226796A790010F573 /* Assets.xcassets */,
-				4B3E0F1D26796A780010F573 /* danshou.xcdatamodeld */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -106,6 +106,8 @@
 		4B3E0F4226796C080010F573 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				4BF8698A267A8E1A0081D44B /* General */,
+				4B48D4D3267A414B00CE3DF1 /* Channel */,
 				4B3E0F4326796CCB0010F573 /* Network */,
 			);
 			path = iOS;
@@ -118,14 +120,22 @@
 				4B3E0F4626796DA60010F573 /* NetworkEntryView.swift */,
 				4B5931792679902A00F83507 /* NetworksOverviewView.swift */,
 				4B59317B2679953300F83507 /* NetworkSectionHeaderView.swift */,
+				4B48D4D1267A33DA00CE3DF1 /* AddNetworkView.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		4B48D4D3267A414B00CE3DF1 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				4B48D4D4267A424B00CE3DF1 /* ChannelMessageView.swift */,
+			);
+			path = Channel;
 			sourceTree = "<group>";
 		};
 		4BCE380B267976DD00A0A64C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4BCE380C267976F600A0A64C /* NetworkEntryModel.swift */,
 				4BCE380F26798B5400A0A64C /* NetworkModel.swift */,
 			);
 			path = Models;
@@ -136,6 +146,14 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4BF8698A267A8E1A0081D44B /* General */ = {
+			isa = PBXGroup;
+			children = (
+				4BF8698B267A8E310081D44B /* SettingsView.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,12 +259,13 @@
 				4BCE381026798B5400A0A64C /* NetworkModel.swift in Sources */,
 				4B3E0F3026796A790010F573 /* danshouApp.swift in Sources */,
 				4B3E0F3426796A790010F573 /* Persistence.swift in Sources */,
-				4B3E0F2E26796A790010F573 /* danshou.xcdatamodeld in Sources */,
 				4B3E0F4526796D070010F573 /* NetworkView.swift in Sources */,
+				4B48D4D2267A33DA00CE3DF1 /* AddNetworkView.swift in Sources */,
 				4B59317A2679902A00F83507 /* NetworksOverviewView.swift in Sources */,
-				4BCE380D267976F600A0A64C /* NetworkEntryModel.swift in Sources */,
+				4B48D4D5267A424B00CE3DF1 /* ChannelMessageView.swift in Sources */,
 				4B3E0F4726796DA60010F573 /* NetworkEntryView.swift in Sources */,
 				4B3E0F3226796A790010F573 /* ContentView.swift in Sources */,
+				4BF8698C267A8E310081D44B /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +275,6 @@
 			files = (
 				4B3E0F3126796A790010F573 /* danshouApp.swift in Sources */,
 				4B3E0F3526796A790010F573 /* Persistence.swift in Sources */,
-				4B3E0F2F26796A790010F573 /* danshou.xcdatamodeld in Sources */,
 				4B3E0F3326796A790010F573 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,19 +561,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		4B3E0F1D26796A780010F573 /* danshou.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				4B3E0F1E26796A780010F573 /* Shared.xcdatamodel */,
-			);
-			currentVersion = 4B3E0F1E26796A780010F573 /* Shared.xcdatamodel */;
-			path = danshou.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 4B3E0F1826796A780010F573 /* Project object */;
 }

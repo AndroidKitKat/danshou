@@ -10,14 +10,43 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-
+    @Environment(\.presentationMode) var presentation
+    
+    @State var showingNewNetworkSheet = false
+    @State var showingSettingsSheet = false
+    
+    /* https://stackoverflow.com/a/60492031 */
+    @State private var settingsButtonID = UUID()
+    @State private var newNetworkButtonID = UUID()
+    
+    @StateObject networkModel: NetworkModel
+    
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
 
     var body: some View {
-        NetworksOverviewView()
+        NavigationView {
+            NetworksOverviewView()
+                .navigationTitle("Networks")
+                .navigationBarItems(leading: Button {
+                    showingSettingsSheet.toggle()
+                } label: {
+                    Image(systemName: "gearshape.fill").foregroundColor(Color.accentColor)
+                }).id(settingsButtonID)
+                .navigationBarItems(trailing: Button {
+                    showingNewNetworkSheet.toggle()
+                } label: {
+                    Image(systemName: "plus").foregroundColor(Color.accentColor)
+                }).id(self.newNetworkButtonID)
+                .sheet(isPresented: $showingNewNetworkSheet, onDismiss: updateButtonIDs) {
+                    AddNetworkView()
+                }
+                .sheet(isPresented: $showingSettingsSheet, onDismiss: updateButtonIDs) {
+                    SettingsView()
+                }
+        }.navigationViewStyle(StackNavigationViewStyle())
 //        List {
 //            ForEach(items) { item in
 //                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
@@ -35,6 +64,12 @@ struct ContentView: View {
 //        }
     }
 
+    private
+func updateButtonIDs() {
+        newNetworkButtonID = UUID()
+        settingsButtonID = UUID()
+    }
+    
     private func addItem() {
         withAnimation {
             let newItem = Item(context: viewContext)
