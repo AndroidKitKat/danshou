@@ -19,7 +19,6 @@ struct ContentView: View {
     @State private var settingsButtonID = UUID()
     @State private var newNetworkButtonID = UUID()
     
-    @StateObject networkModel: NetworkModel
     
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],

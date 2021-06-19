@@ -3,17 +3,7 @@
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
-    <entity name="Network" representedClassName="Network" syncable="YES" codeGenerationType="class">
-        <attribute name="asdf" optional="YES"/>
-    </entity>
-    <entity name="NetworkEntry" representedClassName="NetworkEntry" syncable="YES" codeGenerationType="class">
-        <attribute name="isChannel" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="unreadCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-    </entity>
     <elements>
         <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-        <element name="Network" positionX="-63" positionY="-9" width="128" height="44"/>
-        <element name="NetworkEntry" positionX="-54" positionY="0" width="128" height="74"/>
     </elements>
 </model>

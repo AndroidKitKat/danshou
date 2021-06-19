@@ -9,7 +9,6 @@ import SwiftUI
 
 struct NetworksOverviewView: View {
     @Environment(\.presentationMode) var presentation
-    @ObservedObject var networkModels: [NetworkModel]
     
     // fetch networks from CoreData here or something, they will be fed in like so
     var networks: [NetworkModel] = [

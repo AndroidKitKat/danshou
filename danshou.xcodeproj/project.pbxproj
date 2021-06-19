@@ -22,6 +22,8 @@
 		4B59317A2679902A00F83507 /* NetworksOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5931792679902A00F83507 /* NetworksOverviewView.swift */; };
 		4B59317C2679953300F83507 /* NetworkSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B59317B2679953300F83507 /* NetworkSectionHeaderView.swift */; };
 		4BCE381026798B5400A0A64C /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCE380F26798B5400A0A64C /* NetworkModel.swift */; };
+		4BDFB798267E7C4600F907FF /* danshou.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4BDFB796267E7C4600F907FF /* danshou.xcdatamodeld */; };
+		4BDFB799267E7C4600F907FF /* danshou.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4BDFB796267E7C4600F907FF /* danshou.xcdatamodeld */; };
 		4BF8698C267A8E310081D44B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF8698B267A8E310081D44B /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,7 @@
 		4B59317B2679953300F83507 /* NetworkSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSectionHeaderView.swift; sourceTree = "<group>"; };
 		4B59317D2679A8F300F83507 /* danshou--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "danshou--iOS--Info.plist"; sourceTree = "<group>"; };
 		4BCE380F26798B5400A0A64C /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		4BDFB797267E7C4600F907FF /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		4BF8698B267A8E310081D44B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,12 +79,12 @@
 			isa = PBXGroup;
 			children = (
 				4B3E0F4026796B3E0010F573 /* Views */,
-				4BCE380E2679897900A0A64C /* Resources */,
 				4BCE380B267976DD00A0A64C /* Models */,
 				4B3E0F1F26796A780010F573 /* danshouApp.swift */,
 				4B3E0F2026796A780010F573 /* ContentView.swift */,
 				4B3E0F2126796A780010F573 /* Persistence.swift */,
 				4B3E0F2226796A790010F573 /* Assets.xcassets */,
+				4BDFB796267E7C4600F907FF /* danshou.xcdatamodeld */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -139,13 +142,6 @@
 				4BCE380F26798B5400A0A64C /* NetworkModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		4BCE380E2679897900A0A64C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		4BF8698A267A8E1A0081D44B /* General */ = {
@@ -265,6 +261,7 @@
 				4B48D4D5267A424B00CE3DF1 /* ChannelMessageView.swift in Sources */,
 				4B3E0F4726796DA60010F573 /* NetworkEntryView.swift in Sources */,
 				4B3E0F3226796A790010F573 /* ContentView.swift in Sources */,
+				4BDFB798267E7C4600F907FF /* danshou.xcdatamodeld in Sources */,
 				4BF8698C267A8E310081D44B /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +272,7 @@
 			files = (
 				4B3E0F3126796A790010F573 /* danshouApp.swift in Sources */,
 				4B3E0F3526796A790010F573 /* Persistence.swift in Sources */,
+				4BDFB799267E7C4600F907FF /* danshou.xcdatamodeld in Sources */,
 				4B3E0F3326796A790010F573 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,6 +559,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4BDFB796267E7C4600F907FF /* danshou.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4BDFB797267E7C4600F907FF /* Shared.xcdatamodel */,
+			);
+			currentVersion = 4BDFB797267E7C4600F907FF /* Shared.xcdatamodel */;
+			path = danshou.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4B3E0F1826796A780010F573 /* Project object */;
 }
