@@ -21,8 +21,10 @@ struct NetworkView: View {
         Section(header: NetworkSectionHeaderView(network: networkModel)) {
             if !networkModel.collapsed {
                 ForEach(networkModel.entries) { entry in
+                    NavigationLink(destination: EmptyView()) {
                         NetworkEntryView(type: entry.type, name: entry.name, unreadCount: entry.unreadCount, connected: entry.connected, hasPing: entry.hasPing)
                     }
+                }
             }
         }
     }

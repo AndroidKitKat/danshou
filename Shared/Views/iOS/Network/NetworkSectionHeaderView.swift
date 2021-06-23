@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct NetworkSectionHeaderView: View {
-    @StateObject var network: NetworkModel
+    @ObservedObject var network: NetworkModel
+    
+    @State private var showingNetworkSettingsSheet: Bool = false
     
     var dropDownAngle: Double {
         if network.collapsed {
@@ -29,7 +31,13 @@ struct NetworkSectionHeaderView: View {
                 print("\(network.name) tapped")
             }
             Spacer()
-            Image(systemName: "gearshape.fill").foregroundColor(Color.accentColor)
+            Button(action: {
+                showingNetworkSettingsSheet.toggle()
+            }) {
+                Image(systemName: "gearshape.fill").foregroundColor(Color.accentColor)
+            }
+        }.sheet(isPresented: $showingNetworkSettingsSheet) {
+            NetworkSettingsView()
         }
     }
 }

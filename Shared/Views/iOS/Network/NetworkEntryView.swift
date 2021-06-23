@@ -24,13 +24,23 @@ struct NetworkEntryView: View {
     
     var body: some View {
         HStack {
-            switch type {
-            case .channel:
-                Image(systemName: "message.fill").imageScale(.small)
-            case .user:
-                Image(systemName: "person.fill")
+            if connected {
+                switch type {
+                case .channel:
+                    Image(systemName: "message.fill").imageScale(.small)
+                case .user:
+                    Image(systemName: "person.fill")
+                }
+                Text("\(name)").frame(maxWidth: .infinity, alignment: .leading)
+            } else {
+                switch type {
+                case .channel:
+                    Image(systemName: "message.fill").imageScale(.small).foregroundColor(.gray)
+                case .user:
+                    Image(systemName: "person.fill").foregroundColor(.gray)
+                }
+                Text("\(name)").frame(maxWidth: .infinity, alignment: .leading).foregroundColor(.gray)
             }
-            Text("\(name)").frame(maxWidth: .infinity, alignment: .leading)
             if (unreadCount > 0) {
                 Text("  \(unreadCount)  ")
                     .foregroundColor(Color.white)

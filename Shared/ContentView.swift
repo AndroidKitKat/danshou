@@ -14,6 +14,7 @@ struct ContentView: View {
     
     @State var showingNewNetworkSheet = false
     @State var showingSettingsSheet = false
+    @State var showingNewChannelSheet = false
     
     /* https://stackoverflow.com/a/60492031 */
     @State private var settingsButtonID = UUID()
@@ -34,16 +35,39 @@ struct ContentView: View {
                 } label: {
                     Image(systemName: "gearshape.fill").foregroundColor(Color.accentColor)
                 }).id(settingsButtonID)
-                .navigationBarItems(trailing: Button {
-                    showingNewNetworkSheet.toggle()
-                } label: {
-                    Image(systemName: "plus").foregroundColor(Color.accentColor)
-                }).id(self.newNetworkButtonID)
+                .toolbar {
+                    ToolbarItem(placement: .primaryAction) {
+                        Menu {
+                            Button(action: {
+                                showingNewNetworkSheet.toggle()
+                            }) {
+                                Label("Add network", systemImage: "network")
+                            }
+
+                            Button(action: {
+                                showingNewChannelSheet.toggle()
+                            }) {
+                                Label("Join channel", systemImage: "plus.message.fill")
+                            }
+                        }
+                        label: {
+                            Label("Add", systemImage: "plus")
+                        }
+                    }
+                }.id(self.newNetworkButtonID)
+//                .navigationBarItems(trailing: Button {
+//                    showingNewNetworkSheet.toggle()
+//                } label: {
+//                    Image(systemName: "plus").foregroundColor(Color.accentColor)
+//                }).id(self.newNetworkButtonID)
                 .sheet(isPresented: $showingNewNetworkSheet, onDismiss: updateButtonIDs) {
                     AddNetworkView()
                 }
                 .sheet(isPresented: $showingSettingsSheet, onDismiss: updateButtonIDs) {
                     SettingsView()
+                }
+                .sheet(isPresented: $showingNewChannelSheet, onDismiss: updateButtonIDs) {
+                    AddChannelView()
                 }
         }.navigationViewStyle(StackNavigationViewStyle())
 //        List {

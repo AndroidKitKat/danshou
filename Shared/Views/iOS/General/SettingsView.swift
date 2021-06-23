@@ -11,16 +11,16 @@ struct SettingsView: View {
     @Environment(\.presentationMode) var presentationMode
       
       var body: some View {
-        VStack(spacing: 50) {
-          Text("Information view.")
-            .font(.largeTitle)
-          
-          Button(action: {
-            presentationMode.wrappedValue.dismiss()
-          }, label: {
-            Label("Close", systemImage: "xmark.circle")
-          })
-        }
+          NavigationView {
+              Text("Sheet View content")
+              .navigationBarTitle(Text("Settings"), displayMode: .inline)
+                  .navigationBarItems(trailing: Button(action: {
+                      print("Dismissing sheet view...")
+                      presentationMode.wrappedValue.dismiss()
+                  }) {
+                      Image(systemName: "xmark.circle.fill").foregroundColor(Color.secondary)
+                  })
+          }
       }
 }
 

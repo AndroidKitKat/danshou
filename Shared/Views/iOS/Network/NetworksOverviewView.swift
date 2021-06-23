@@ -8,29 +8,61 @@
 import SwiftUI
 
 struct NetworksOverviewView: View {
-    @Environment(\.presentationMode) var presentation
-    
+    @Environment(\.presentationMode) var presentationMode
     // fetch networks from CoreData here or something, they will be fed in like so
-    var networks: [NetworkModel] = [
-        NetworkModel(name: "testNetwork1", entries: [
-            NetworkEntry(name: "#testChannel", type: .channel, unreadCount: 10, connected: true, hasPing: false),
-            NetworkEntry(name: "#testChannel1", type: .channel, unreadCount: 123, connected: true, hasPing: true),
-            NetworkEntry(name: "#testChannel2", type: .channel, unreadCount: 3, connected: true, hasPing: false),
-            NetworkEntry(name: "testUser", type: .user, unreadCount: 2, connected: true, hasPing: false)
-        ], collapsed: false),
-        NetworkModel(name: "testNetwork2", entries: [
-            NetworkEntry(name: "#testChannel", type: .channel, unreadCount: 10, connected: true, hasPing: false),
-            NetworkEntry(name: "#testChannel1", type: .channel, unreadCount: 123, connected: true, hasPing: true),
-            NetworkEntry(name: "#testChannel2", type: .channel, unreadCount: 3, connected: true, hasPing: false),
-            NetworkEntry(name: "testUser", type: .user, unreadCount: 2, connected: true, hasPing: false)
-        ], collapsed: true),
-        NetworkModel(name: "testNetwork3", entries: [
-            NetworkEntry(name: "#testChannel", type: .channel, unreadCount: 10, connected: true, hasPing: false),
-            NetworkEntry(name: "#testChannel1", type: .channel, unreadCount: 123, connected: true, hasPing: true),
-            NetworkEntry(name: "#testChannel2", type: .channel, unreadCount: 3, connected: true, hasPing: false),
-            NetworkEntry(name: "testUser", type: .user, unreadCount: 2, connected: true, hasPing: false)
-        ], collapsed: false),
-    ]
+    
+    private var userNetworks: UserNetworks = UserNetworks.init()
+
+    var networks: [NetworkModel] {
+        var networksToShow: [NetworkModel] = []
+        for network in userNetworks.networks {
+            var incomingNetwork: NetworkModel = NetworkModel()
+            for (networkId, networkProperties) in network {
+                /* network properties to set
+                 - name
+                 - entries (for loop)
+                 - collapsed
+                 - address
+                 - port
+                 - secureConnection
+                 - autoconnect
+                 - nickname
+                 - username
+                 - realname
+                 - waitForAuth
+                 */
+                
+                // name
+                incomingNetwork.id = UUID(uuidString: networkId) ?? UUID()
+                
+                incomingNetwork.name = networkProperties["name"] as? String ?? "Probem"
+                
+                incomingNetwork.address = networkProperties["address"] as? String ?? "wtf"
+                
+                incomingNetwork.port = networkProperties["port"] as? String ?? "6667"
+                
+                incomingNetwork.secureConnection = networkProperties["secureConnection"] as? Bool ?? true
+                
+                incomingNetwork.serverPassword = "TODO"
+                
+                incomingNetwork.userPassword = "TODO"
+                
+                incomingNetwork.autoconnect = networkProperties["autoconnect"] as? Bool ?? true
+                
+                incomingNetwork.nickname = networkProperties["nickname"] as? String ?? "WTAF"
+                
+                incomingNetwork.username = networkProperties["username"] as? String ?? "danshou"
+                
+                incomingNetwork.realName = networkProperties["realName"] as? String ?? "John Doe"
+                
+                incomingNetwork.waitForAuth = networkProperties["waitForAuth"] as? Bool ?? true
+                
+                incomingNetwork.entries = []
+            }
+            networksToShow.append(incomingNetwork)
+        }
+        return networksToShow
+    }
     
     var body: some View {
             List {
