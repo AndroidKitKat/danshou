@@ -16,7 +16,10 @@ class UserNetworks: ObservableObject {
     }
     
     init() {
-        self.networks = UserDefaults.standard.object(forKey: "networks") as? [[String: AnyObject]] ?? [[:]]
-        print(self.networks)
+        if self.networks = UserDefaults.standard.object(forKey: "networks") as! [[String: AnyObject]] {
+            
+        }
+
+//        self.networks = (UserDefaults.standard.object(forKey: "networks") as? [[String: AnyObject]]) ?? [[String: AnyObject]()]
     }
 }
